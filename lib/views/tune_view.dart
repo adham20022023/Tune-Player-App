@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:music_notes_player_app_setup/models/tune_model.dart';
-import 'package:music_notes_player_app_setup/widgets/tune_item.dart';
+// import 'package:music_notes_player_app_setup/widgets/tune_item.dart';
+import 'package:music_notes_player_app_setup/widgets/tune_item2.dart';
 
 class TuneView extends StatelessWidget {
   TuneView({super.key});
@@ -25,7 +26,7 @@ class TuneView extends StatelessWidget {
         backgroundColor: Color(0xff26313A),
       ),
       body: Column(
-        children: Tunes.map((e) => TuneItem(
+        children: Tunes.map((e) => TuneItem2(
               tune: e,
             )).toList(),
       ),
